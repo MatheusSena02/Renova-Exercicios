@@ -10,7 +10,7 @@ int main()
         printf("Nível de Poder do Campeão %d : ", i+1);
         scanf("%d", &poder[i]);
         fflush(stdin);
-        if(poder[i] > poder[i - 1])
+        if(poder[i] > poder[i - 1]) //possível erro : Busca de valor inexistente
         {
             maisforte = poder[i];
         }
